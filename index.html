@@ -1,0 +1,103 @@
+<html>
+<head>
+	<!-- ZEUS AT RISEFROMYOURGRAVE DOT COM -->
+	<!-- <3 EFF -->
+	<title>WELCOME TO YOUR DOOM</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="title" content="WELCOME TO YOUR DOOM" />
+	<meta name="description" content="WELCOME TO YOUR DOOM" />
+	<meta name="keywords" content="WELCOME TO YOUR DOOM, altered beast, sega" />
+	<meta name="language" content="en" />
+	<meta name="robots" content="index, follow" />
+	<meta property="og:title" content="WELCOME TO YOUR DOOM" / >
+	<meta property="og:type" content="game" / >
+	<meta property="og:url" content="http://risefromyourgrave.com" />
+	<meta property="og:image" content="http://risefromyourgrave.com/og.png" />
+	<meta property="og:site_name" content="WELCOME TO YOUR DOOM" />
+	<style type='text/css'>
+    body {
+      background-color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    video {
+      position: absolute;
+      margin: 0 auto 0 auto;
+      left: 0;
+      right: 0;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: 1000;
+      overflow: hidden
+    }
+
+    button {
+      background-image:url(play.png);
+      background-repeat:no-repeat;
+      width:50%;
+      height:50%;
+      position:absolute;
+      left:0%;
+      right:0%;
+      top:0%;
+      bottom:0%;
+      margin:auto;
+      background-size:contain;
+      background-position: center;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      z-index: 1001;
+      opacity: 0.5;
+    }
+
+    .description {
+      display: none;
+    }
+	</style>
+</head>
+
+<body>
+	<h1 class="description">NEFF SAYS: Welcome to your doom</h1>
+  <button></button>
+	<video preload="auto" volume="100">
+		<source src="wtyd.mp4" type="video/mp4">
+		<source src="wtyd.ogv" type="video/ogg ogv">
+  </video>
+</body>
+
+<script type="text/javascript">
+  const body = document.getElementsByTagName('body')[0];
+  const button = document.getElementsByTagName('button')[0];
+  const video = document.getElementsByTagName('video')[0];
+
+  const play = () => {
+    video.play();
+    button.style.display = "none";
+  };
+  body.onclick = play;
+  video.onclick = play;
+  button.onclick = play;
+
+  video.addEventListener('ended', () => {
+    window.location = "http://risefromyourgrave.com";
+  });
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36079858-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</html>
